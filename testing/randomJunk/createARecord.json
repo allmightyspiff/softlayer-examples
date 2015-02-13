@@ -1,0 +1,8 @@
+{
+    "parameters" : [{
+        "host" : "salt",
+        "data" : "184.172.7.100",
+        "domainId" : 1674448000,
+        "type" : "a"
+    }]
+}

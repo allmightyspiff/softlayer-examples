@@ -1,0 +1,28 @@
+curl -u USERNAME:APIKEY \
+--data "objectMask=mask\[id,fullyQualifiedDomainName,networkComponents\[networkHardware,uplinkComponent\]\]" \
+-G \
+"https://api.softlayer.com/rest/v3/SoftLayer_Account/getHardware" \
+| python -m json.tool
+
+
+
+curl -u USERNAME:API-KEY \
+-G --data \
+"objectMask=mask[id,networkComponents[networkHardware]]"  \
+"https://api.softlayer.com/rest/v3/SoftLayer_Account/getHardware" \
+| python -m json.tool
+
+
+curl -u USERNAME:APIKEY -vv -G "https://api.softlayer.com/rest/v3/SoftLayer_Account/getHardware?objectMask=mask\[id,fullyQualifiedDomainName,networkComponents\[networkHardware,uplinkComponent\]\]" 
+* Connected to api.softlayer.com (66.228.119.116) port 443 (#0)
+* TLS 1.2 connection using TLS_RSA_WITH_AES_128_CBC_SHA
+* Server certificate: api.softlayer.com
+* Server certificate: RapidSSL CA
+* Server certificate: GeoTrust Global CA
+* Server auth using Basic with user 'USERNAME'
+> GET /rest/v3/SoftLayer_Account/getHardware?objectMask=mask[id,fullyQualifiedDomainName,networkComponents[networkHardware,uplinkComponent]] HTTP/1.1
+> Authorization: Basic c2wzMDc2MDgtY2hnYWxsbzphMDk0MDgxMjMyZTYwNzU3OTdlMjljYWZhNGMzNTgxOTU2MmRmZDFkMjA5MDIxNzI1OTYxOTg0MzQ4MzVhNWZm
+> User-Agent: curl/7.37.1
+> Host: api.softlayer.com
+> Accept: */*
+>

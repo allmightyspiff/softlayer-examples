@@ -1,0 +1,10 @@
+#Get AUTH TOKEN
+curl -i -H "X-Auth-User: ACCOUBT:USERNAME" -H "X-Auth-Key: " https://tok02.objectstorage.softlayer.net/auth/v1.0/
+
+#List containers (USE URL PROVIDED BY AUTH TOKEN)
+curl -i -H "X-Auth-Token: AUTH_tk..." https://tok02.objectstorage.softlayer.net/v1/AUTH_0c8e0fe1-ab6e-4e56-8ce0-e513f347ddfd
+
+
+#PUT SOMETHING
+#"SL Overview - 2015 Updates v2.pptx" is on the working directory
+curl -i -XPUT -T "SL Overview - 2015 Updates v2.pptx"" -H "X-Auth-Token: AUTH_..." https://tok02.objectstorage.softlayer.net/v1/AUTH_0c8e0fe1-ab6e-4e56-8ce0-e513f347ddfd/Presentations/SLOverview2015.pptx

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+if [ -e /root/minion01.ip ]
+then
+    echo -e "\e[93mReading \e[96m<MINION IP>\e[93m from /root/minion01.ip ...\e[0m"
+else
+    echo -e "\e[31mFor this script to work put the minion01 ip address in /root/minion01.ip\e[0m"
+    exit
+fi
+MINION=`cat /root/minion01.ip`
+MASTER=`ifconfig eth1 | grep "inet addr:" | awk '{print $2}' | awk -F: '{print $2}'`
+
+echo -e "\e[32mRunning:\e[0m  ssh ${MINION} \"echo 'master: ${MASTER}' > /etc/salt/minion.d/master.conf \" "
+MASTERFILE=`ssh ${MINION} "echo 'master: ${MASTER}' > /etc/salt/minion.d/master.conf ; cat /etc/salt/minion.d/master.conf " `
+echo -e "\e[93mmaster.conf on minion01 is now =>\e[0m\"${MASTERFILE}\""
+echo -e "\e[32mRunning\e[0m ssh ${MINION} \"service salt-minion restart\" \e[0m"
+ssh ${MINION} "service salt-minion restart"
+ 
+
+

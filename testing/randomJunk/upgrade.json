@@ -1,0 +1,14 @@
+{
+    "parameters":[
+    {
+        "complexType":"SoftLayer_Container_Product_Order_Virtual_Guest_Upgrade",
+        "prices":[{"id":22694}],
+        "properties":[
+            {"name":"MAINTENANCE_WINDOW",
+            "value":"2014-12-17 17:00:22.584000"}
+            
+        ],
+        "virtualGuests":[{"id":7521218}]
+    }
+    ]
+}

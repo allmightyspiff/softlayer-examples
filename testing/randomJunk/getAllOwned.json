@@ -1,0 +1,18 @@
+{
+    "objectFilter":
+    {"allOwnedAccounts":
+    {"invoices":
+        {"createDate":
+            {"operation":"betweenDate",
+             "options":
+                [{"name":"startDate",
+                 "value":["11/01/2014 00:00:00"]},
+                 {"name":"endDate",
+                  "value":["12/01/2014 23:59:59"]}
+                ]
+            }
+        }
+    }
+    }
+
+}

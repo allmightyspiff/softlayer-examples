@@ -1,0 +1,21 @@
+<root>
+   <parameters>
+      <complexType>"SoftLayer_Container_Product_Order_Virtual_Guest_Upgrade"</complexType>
+      <virtualGuests>
+
+            <id>7444860</id>
+
+      </virtualGuests>
+      <prices>
+
+            <id>1641</id>
+
+      </prices>
+      <properties>
+         <maintenanceWindow>
+            <name>"MAINTENANCE_WINDOW"</name>
+            <value>"now"</value>
+        </maintenanceWindow>
+      </properties>
+   </parameters>
+</root>

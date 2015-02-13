@@ -1,0 +1,20 @@
+{ 
+    "parameters":[ 
+    { 
+        "datacenter" : {
+            "name" : "sjc01"
+        },
+        "sshKeys" : [
+            {"id" : "82986"}
+        ],
+        "hostname": "salt", 
+        "domain": "cgalloTest.com", 
+        "startCpus": 1, 
+        "maxMemory": 1024, 
+        "hourlyBillingFlag": true, 
+        "localDiskFlag": false, 
+        "operatingSystemReferenceCode": "DEBIAN_LATEST" ,
+        "postInstallScriptUri": "https://pastebin.com/raw.php?i=sg6r5DfA"
+    } 
+    ] 
+}
