@@ -1,10 +1,11 @@
 #!/bin/bash
 
-echo -e "\e[32mRunning: \e[0msalt '*' cmd.run "\docker pull dockerfile/ghost\"
+echo -e "\e[32mRunning:  (this might take a while) \e[0msalt '*' cmd.run "\docker pull dockerfile/ghost\"
 salt '*' cmd.run "docker pull dockerfile/ghost"
 
 echo -e "\e[32mRunning: \e[0msalt '*' cmd.run \"docker run -d -p 80:2368 dockerfile/ghost\""
 salt '*' cmd.run "docker run -d -p 80:2368 dockerfile/ghost"
+sleep 15
 
 echo -e "\e[32mRunning: \e[0msalt '*' cmd.run \"curl 127.0.0.1 | grep Welcome\" "
-salt '*' cmd.run "curl -s 127.0.0.1 | grep Welcome"
+salt '*' cmd.shell "curl -s 127.0.0.1 | grep Welcome"
