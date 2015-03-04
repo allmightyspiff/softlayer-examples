@@ -92,8 +92,8 @@ if __name__ == "__main__":
  
     args = argsparse.parse_args()
     template_user_id = 264562
-    api_username = 'SL307608'
-    api_key = 'cced2db7761428c6080546172ccb8214ce129acf2e5e845ac7bba0c4ad4edcfa'
+    api_username = ''
+    api_key = ''
     client = SoftLayer.Client(
         username=api_username,
         api_key=api_key,
