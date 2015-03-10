@@ -1,9 +1,0 @@
-#!/bin/bash
-echo -e "\e[32mRunning:\e[0m sl config setup"
-sl config setup
-
-echo -e "\e[32mRunning:\e[0m sl vs list"
-sl vs list
-
-echo -e "\e[32mRunning:\e[0m sl help vs"
-sl help vs

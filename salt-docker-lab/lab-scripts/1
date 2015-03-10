@@ -1,2 +1,0 @@
-#!/bin/bash
-echo -e "\e[32mYou are already be logged in!\e[0m"
