@@ -25,7 +25,7 @@ This lab is designed to take students through some of the basics of the SoftLaye
 ```bash
 python lab_users.py --num-users=10
 ```
-That will create 10 users, and 10 master servers for them to login to.
+  That will create 10 users, and 10 master servers for them to login to.
 3. Present the lab!
 4. [cancel_users.py](https://github.com/allmightyspiff/softlayer-examples/blob/master/salt-docker-lab/LabSetup/cancel_users.py) will clean the lab up for you, but you will need to make some changes. 
   1. Line 55-56: Your API username + key
@@ -41,7 +41,7 @@ If the students are using their own accounts, they will need to create a new ser
 2. Navigate to Devices -> Manage -> [Images](https://control.softlayer.com/devices/images)
 3. Make sure you are looking at the PUBLIC images (its a drop down above the image list)
 4. Search for a Template name of salt (there are a lot of images)
-  *. Specifically [SoftLayer-SaltStack-Docker-Ghost Lab Master](https://control.softlayer.com/devices/images/450151?imageType=public)
+  * Specifically [SoftLayer-SaltStack-Docker-Ghost Lab Master](https://control.softlayer.com/devices/images/450151?imageType=public)
 5. Use the "Action" button to order a new Hourly Virtual Server
 6. Present the lab!
 
