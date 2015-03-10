@@ -51,9 +51,11 @@ if __name__ == "__main__":
  
     args = argsparse.parse_args()
 
-
+    ##### CHANGE THESE #################
     api_username = ''
     api_key = ''
+    ####################################
+
     client = SoftLayer.Client(
         username=api_username,
         api_key=api_key,

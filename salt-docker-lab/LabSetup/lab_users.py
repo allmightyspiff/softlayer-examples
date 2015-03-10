@@ -11,7 +11,7 @@ def create_user(username):
         'username': username,
         'firstName': 'Impact User',
         'lastName': 'Impact User',
-        'email': 'pjackson@softlayer.com',
+        'email': 'someone@somewhere.com',
         'companyName': 'IBM Impact Lab',
         'address1': '3355 S Las Vegas Blvd',
         'city': 'Las Vegas',
@@ -63,6 +63,8 @@ def orderUserServer(user, apiKey):
     guest['maxMemory'] = 1024
     guest['localDiskFlag'] = False
     guest['hostname'] = hostname
+    ##### This Domain will be used in step 8 to create a DNS domain.
+    ##### Make sure your account owns the TLD (lablayer.info for example)
     guest['domain'] = user + ".lablayer.info"
     guest['hourlyBillingFlag'] = True
     guest['datacenter'] = {}
@@ -91,9 +93,13 @@ if __name__ == "__main__":
                            default=1, help='Username offset')
  
     args = argsparse.parse_args()
+
+    ##### CHANGE THESE #################
     template_user_id = 264562
     api_username = ''
     api_key = ''
+    ####################################
+
     client = SoftLayer.Client(
         username=api_username,
         api_key=api_key,
