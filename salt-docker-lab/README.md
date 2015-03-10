@@ -22,9 +22,11 @@ This lab is designed to take students through some of the basics of the SoftLaye
   5. Line 99-100: Change to your master user name and API key
   6. Line 117: Change the username prefix to something you like
 2. Then just run the script
+
   ```bash
 python lab_users.py --num-users=10
   ```
+  
   That will create 10 users, and 10 master servers for them to login to.
 3. Present the lab!
 4. [cancel_users.py](https://github.com/allmightyspiff/softlayer-examples/blob/master/salt-docker-lab/LabSetup/cancel_users.py) will clean the lab up for you, but you will need to make some changes. 
